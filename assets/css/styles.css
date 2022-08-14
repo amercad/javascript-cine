@@ -1,0 +1,50 @@
+:root {
+    --colorPrincipal: #21232A;
+    --blanco: #FFF;
+    --negro: #000;
+    --gris: #e1e1e1;
+    --fuentePrincipal: Helvetica, Arial, sans-serif;
+    --fuenteSecunadaria: Arial, sans-serif,  Helvetica;
+    --separacion: 5rem;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+h1, h2, h3 {
+    font-family: var(--fuenteSecunadaria);
+    margin: 0 0 .5rem 0;
+}
+
+h1 {
+    font-size: 4;
+}
+
+h2 {
+    font-size: 3;
+}
+
+h3 {
+    font-size: 2;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}

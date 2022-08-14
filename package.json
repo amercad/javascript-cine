@@ -1,0 +1,12 @@
+{
+  "name": "template-javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn run http-server --port=3000"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
