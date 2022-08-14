@@ -1,10 +1,11 @@
+
 :root {
     --colorPrincipal: #21232A;
     --blanco: #FFF;
     --negro: #000;
     --gris: #e1e1e1;
-    --fuentePrincipal: Helvetica, Arial, sans-serif;
-    --fuenteSecunadaria: Arial, sans-serif,  Helvetica;
+    --fuentePrincipal: 'Catamaran', sans-serif;
+    --fuenteSecunadaria: 'Italianno', cursive;
     --separacion: 5rem;
 }
 
@@ -47,4 +48,22 @@ a {
 img {
     display: block;
     max-width: 100%;
+}
+
+.hero {
+
+    background-image: url(../img/portada.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero h1 {
+    font-size: 8rem;
 }
