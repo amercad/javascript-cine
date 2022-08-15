@@ -67,3 +67,10 @@ img {
 .hero h1 {
     font-size: 8rem;
 }
+
+.card img {
+
+    object-fit: cover;
+    width: 100%;
+
+}
