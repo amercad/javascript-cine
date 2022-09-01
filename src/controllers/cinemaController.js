@@ -73,7 +73,7 @@ const peliculas = [
         nombre: 'Top Gun',
         genero: 'Accion',
         duracion: 110,
-        poster: 'gs://cineamr-5042b.appspot.com/pelicula-ton-gun.jpg',
+        poster: 'https://firebasestorage.googleapis.com/v0/b/cineamr-5042b.appspot.com/o/pelicula-ton-gun.jpg?alt=media&token=be14ed40-a72c-4cef-b828-2ec0802259ec',
         sinopsis: 'Top Gun (conocida como Top Gun: Pasión y gloria en Hispanoamérica, Top Gun: Reto a la gloria en Chile y Top Gun: Ídolos del aire en España) es una película estadounidense de acción, drama y romance de 1986, dirigida por Tony Scott y protagonizada por Tom Cruise y Kelly McGillis.',
         clasificacion: 'General',
         idioma: 'En'
@@ -91,8 +91,66 @@ const peliculas = [
         nombre: 'Vértigo',
         genero: 'Thriller. Drama',
         duracion: 107,
-        poster: 'Para Becky y Hunter, la vida trata de superar tus miedos y empujar tus límites. Sin embargo, después de subir hasta la cima de una torre de comunicaciones abandonada, se encuentran atrapadas y sin forma de bajar. A 600 metros del suelo y totalmente alejadas de la civilización, las chicas pondrán a prueba sus habilidades de escaladoras expertas y lucharán desesperadamente por sobrevivir aunque lo tengan todo en contra. ¿Lo lograrán?',
-        clasificacion: '',
+        poster: 'https://firebasestorage.googleapis.com/v0/b/cineamr-5042b.appspot.com/o/pelicula-vertigo.png?alt=media&token=93adb46f-eadb-4eea-9c2a-ab89ca13cfa1',
+        clasificacion: 'Para Becky y Hunter, la vida trata de superar tus miedos y empujar tus límites. Sin embargo, después de subir hasta la cima de una torre de comunicaciones abandonada, se encuentran atrapadas y sin forma de bajar. A 600 metros del suelo y totalmente alejadas de la civilización, las chicas pondrán a prueba sus habilidades de escaladoras expertas y lucharán desesperadamente por sobrevivir aunque lo tengan todo en contra. ¿Lo lograrán?',
         idioma: 'En'
     }
 ];
+
+const fila = document.querySelector('#fila');
+let card = '';
+
+peliculas.map( pelicula => {
+
+    // const poster = document.createElement('img');
+    // const nombre = document.createElement('h2');
+
+    // poster.src = pelicula.poster;
+    // nombre.innerText = pelicula.nombre;
+
+    // fila.appendChild(poster);
+    // fila.appendChild(nombre);
+    const columna = document.createElement('div');
+    columna.classList.add('col');
+
+    const tarjeta = document.createElement('div');
+    tarjeta.classList.add('card', 'h-100');
+
+    const poster = document.createElement('img');
+    poster.src = pelicula.poster;
+    poster.classList.add('card-img-top');
+
+    const tarjetaBody = document.createElement('div');
+    tarjeta.classList.add('card-body');
+
+    const nombre = document.createElement('h2');
+    nombre.classList.add('card-title', 'text-center', 'pt-4');
+    nombre.textContent = pelicula.nombre;
+
+    const genera = document.createElement('p');
+    genera.classList.add('text-start', 'fw-bold');
+    genera.textContent = 'Genero: ' + pelicula.genero;
+    
+
+    const idioma = document.createElement('p');
+    idioma.classList.add('text-start', 'fw-bold');
+    idioma.textContent = 'Idioma: ' + pelicula.idioma;
+
+    const sinopsis = document.createElement('p');
+    sinopsis.classList.add('text-start', 'fw-bold', 'd-none');
+    sinopsis.textContent = 'Sinopsis: ' + pelicula.sinopsis;
+
+    tarjeta.appendChild(poster); 
+    tarjeta.appendChild(nombre); 
+    tarjeta.appendChild(genera); 
+    tarjeta.appendChild(idioma);
+    tarjeta.appendChild(sinopsis);
+    columna.appendChild(tarjeta);
+    fila.appendChild(columna);
+    tarjeta.appendChild(tarjetaBody)
+    
+});
+
+fila.addEventListener('click', () => {
+    console.log('Esta seleccionando una pelicula');
+});
