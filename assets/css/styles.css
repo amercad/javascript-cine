@@ -74,3 +74,16 @@ img {
     width: 100%;
 
 }
+
+.tamanio {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.tituloh1 {
+    font-size: 3.8rem;
+}
+
+.titulo {
+    font-weight: bold;
+}
