@@ -110,7 +110,8 @@ const peliculas = [
         genero: 'Thriller. Drama',
         duracion: 107,
         poster: 'https://firebasestorage.googleapis.com/v0/b/cineamr-5042b.appspot.com/o/pelicula-vertigo.png?alt=media&token=93adb46f-eadb-4eea-9c2a-ab89ca13cfa1',
-        clasificacion: 'Para Becky y Hunter, la vida trata de superar tus miedos y empujar tus límites. Sin embargo, después de subir hasta la cima de una torre de comunicaciones abandonada, se encuentran atrapadas y sin forma de bajar. A 600 metros del suelo y totalmente alejadas de la civilización, las chicas pondrán a prueba sus habilidades de escaladoras expertas y lucharán desesperadamente por sobrevivir aunque lo tengan todo en contra. ¿Lo lograrán?',
+        sinopsis: 'Para Becky y Hunter, la vida trata de superar tus miedos y empujar tus límites. Sin embargo, después de subir hasta la cima de una torre de comunicaciones abandonada, se encuentran atrapadas y sin forma de bajar. A 600 metros del suelo y totalmente alejadas de la civilización, las chicas pondrán a prueba sus habilidades de escaladoras expertas y lucharán desesperadamente por sobrevivir aunque lo tengan todo en contra. ¿Lo lograrán?',
+        clasificacion: 'General',
         idioma: 'En',
         director: 'Kenneth Branagh',
         actores: ['Chris Hemserth', 'Natalie Prtman', 'Tom Hiddleston']
